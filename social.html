@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociales</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&family=Montserrat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&family=Montserrat:wght@400;700&family=Lobster&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -46,12 +46,14 @@
             text-decoration: none;
             color: #333;
             font-size: 1.2em;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Lobster', cursive; /* Cambiar la fuente */
+            display: flex;
+            align-items: center;
         }
         .social-icons img {
             width: 50px;
             height: 50px;
-            margin-top: 10px;
+            margin-left: 10px; /* Espacio entre el texto y el icono */
         }
         .back-button {
             margin-top: 30px;
@@ -63,12 +65,13 @@
             font-weight: bold;
             border-radius: 5px;
             display: inline-block;
-            position: absolute;
-            right: 20px;
-            top: 20px;
         }
         .back-button:hover {
             background-color: #555;
+        }
+        .button-container {
+            text-align: left; /* Alinear el botón a la izquierda */
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -85,14 +88,20 @@
         <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=61559165031655&sk=photos">
                 Facebook
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJku3gxo1OVwXNuvNJb1lmQ6iqwOlXx7qDADHBlmDaiXgn_2ZBxu-m6wf03sPhM9bLl9Y&usqp=CAU">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJku3gxo1OVwXNuvNJb1lmQ6iqwOlXx7qDADHBlmDaiXgn_2ZBxu-m6wf03sPhM9bLl9Y&usqp=CAU" alt="Facebook Icon">
             </a>
             <a href="https://www.instagram.com/ejercito_de.dios/">
                 Instagram
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram Icon">
+            </a>
+            <a href="https://www.youtube.com/channel/UCVuOlhxxoRiCt8PG_p3Fphw">
+                Youtube
+                <img src="https://i.pinimg.com/736x/e3/e3/48/e3e3480c7752cebc014ece611369876b.jpg" alt="YouTube Icon">
             </a>
         </div>
-        <a href="index.html" class="back-button">Volver a la Página Principal</a>
+        <div class="button-container">
+            <a href="index.html" class="back-button">Volver a la Página Principal</a>
+        </div>
     </div>
 </body>
 </html>
