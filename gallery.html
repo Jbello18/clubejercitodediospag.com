@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            padding: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Galería de Fotos</h1>
+</header>
+
+<div class="container">
+    <div class="image-gallery">
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <img src="imagen3.jpg" alt="Imagen 3">
+    </div>
+    <div class="image-gallery">
+        <img src="imagen4.jpg" alt="Imagen 4">
+        <img src="imagen5.jpg" alt="Imagen 5">
+        <img src="imagen6.jpg" alt="Imagen 6">
+    </div>
+    <div class="image-gallery">
+        <img src="imagen7.jpg" alt="Imagen 7">
+        <img src="imagen8.jpg" alt="Imagen 8">
+        <img src="imagen9.jpg" alt="Imagen 10">
+    </div>
+    <a href="index.html" class="back-button">Volver a la Página Principal</a>
+</div>
+
+</body>
+</html>
+
